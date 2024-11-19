@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/APDASpeakerScale/static/css/main.a5ba8182.css",
-    "main.js": "/APDASpeakerScale/static/js/main.a8e8a970.js",
+    "main.js": "/APDASpeakerScale/static/js/main.4d44bf0a.js",
     "static/js/453.17cbcd96.chunk.js": "/APDASpeakerScale/static/js/453.17cbcd96.chunk.js",
     "index.html": "/APDASpeakerScale/index.html",
     "main.a5ba8182.css.map": "/APDASpeakerScale/static/css/main.a5ba8182.css.map",
-    "main.a8e8a970.js.map": "/APDASpeakerScale/static/js/main.a8e8a970.js.map",
+    "main.4d44bf0a.js.map": "/APDASpeakerScale/static/js/main.4d44bf0a.js.map",
     "453.17cbcd96.chunk.js.map": "/APDASpeakerScale/static/js/453.17cbcd96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5ba8182.css",
-    "static/js/main.a8e8a970.js"
+    "static/js/main.4d44bf0a.js"
   ]
 }
