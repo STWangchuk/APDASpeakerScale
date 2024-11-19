@@ -82,15 +82,24 @@ const ensureValidScore = (score) => {
       return brackets[randomIndex];
     };
   
+    // Track the previously selected bracket
+    const [previousBracket, setPreviousBracket] = useState(null);
+    
     // Start or randomize a new bracket
     const randomizeCategory = () => {
-      const newBracket = pickRandomBracket(validBrackets);
+      let newBracket;
+      do {
+        newBracket = pickRandomBracket(validBrackets);
+      } while (newBracket === previousBracket); // Ensure new bracket is different from the last one
+      
       setCurrentBracket(newBracket);
+      setPreviousBracket(newBracket); // Update the previous bracket
       setShowScore(false);
       setRangeQuestion(false);
       setFinalScore(null);
       setGameOver(false);
     };
+
   
     // Handle "Better" or "Worse" selection
     const handleBetterWorse = (response) => {
