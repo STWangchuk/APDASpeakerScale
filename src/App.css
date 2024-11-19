@@ -1,38 +1,120 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Adjust title size */
+h1 {
+  font-size: 2rem;
+  color: #0073e6;
+  margin-bottom: 20px;
+}
+
+/* Category display and control section */
+.category-display,
+.controls {
+  margin: 20px 0;
+}
+
+/* Reduce font size of category description and center it */
+.category-display p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Make buttons larger and style them */
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+  width: 200px; /* Make buttons wider */
+}
+
+/* Add hover effects for buttons */
+button:hover {
+  background: #0073e6;
+  color: #fff;
+  transform: scale(1.05); /* Make the button a bit larger on hover */
+}
+
+/* Stack buttons */
+.controls {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.controls button {
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button arrangement for Worse, Better, and Match */
+.controls .top-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.controls .top-row button {
+  width: auto; /* Reset width for top row */
+}
+
+/* Randomize button */
+.randomize-btn {
+  margin-top: 20px;
+  background: #ff6347;
+  color: #fff;
+  width: auto;
+}
+
+.randomize-btn:hover {
+  background: #e55342;
+}
+
+/* Final score display styling */
+.final-score {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.final-score h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.final-score button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.final-score button:hover {
+  background-color: #005bb5;
 }
